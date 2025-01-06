@@ -39,8 +39,7 @@ export const setAuthHeader = (token) => {
     }
 };
 
-//axios.defaults.baseURL = 'http://localhost:8090';
-axios.defaults.baseURL = 'http://afdf1cdf63654449dbc39270b4b63577-580563448.eu-north-1.elb.amazonaws.com';
+axios.defaults.baseURL = 'http://localhost:8090';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 export const request = (method, url, data = {}) => {
